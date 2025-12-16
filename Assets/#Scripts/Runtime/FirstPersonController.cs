@@ -211,7 +211,7 @@ public class FirstPersonController : MonoBehaviour
         currentVelocity = Vector3.Lerp(currentVelocity, targetVelocity, acceleration * Time.deltaTime * strafeMultiplier);
         
         // Apply movement
-        Debug.Log(verticalVelocity);
+//        Debug.Log(verticalVelocity);
         characterController.Move((currentVelocity + verticalVelocity) * Time.deltaTime);
     }
     #endregion
